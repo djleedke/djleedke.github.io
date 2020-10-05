@@ -1,0 +1,96 @@
+html {
+	background-color:#2a2a2a;
+}
+
+body {
+	background-color:inherit;
+	color:#cacaca;
+	font-family: 'Montserrat', sans-serif;
+}
+
+p {
+	color: #8a8a8a;
+	font-family: 'Lato', sans-serif;
+}
+
+#content {
+
+	padding: 5% 10%;
+
+}
+
+.tag {
+	border-color:  #404040;
+	border-style: solid;
+	border-width: 1px 1px 2px 1px;
+	border-radius: 2px;
+	margin-left:2px;
+	margin-right:2px;
+	margin-bottom:5px;
+	padding:2px 5px;
+	display:inline-block;
+	color: #8a8a8a;
+	font-family: 'Lato', sans-serif;
+	font-size:.8em;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.tag:hover {
+	color:white;
+	transition: .5s all;
+}
+
+#project-list {
+	text-align:center;
+
+}
+
+.project {
+	display:inline-block;
+	margin-bottom:25px;
+	width:50%;
+	position:relative;
+
+}
+
+.overlay {
+	opacity:0;
+	color:white;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	transition: .5s opacity;
+}
+
+.project:hover > .overlay {
+	opacity: 1;
+	z-index:1;
+	transition: .5s opacity;
+}
+
+.project img {
+	width:95%;
+	text-align:center;
+	transition: .5s opacity;
+}
+
+.project:hover > img {
+	opacity:.4;
+	transition: .5s opacity;
+}
+
+
+#contact {
+	margin: 2% auto;
+	width:50%;
+	text-align: center;
+
+}
+
+#contact a {
+	color:white;
+	
+}
