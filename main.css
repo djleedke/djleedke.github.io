@@ -47,11 +47,7 @@ p {
 }
 
 .project {
-	display:inline-block;
 	margin-bottom:25px;
-	width:50%;
-	position:relative;
-
 }
 
 .overlay {
@@ -72,7 +68,7 @@ p {
 }
 
 .project img {
-	width:95%;
+	width:100%;
 	text-align:center;
 	transition: .5s opacity;
 }
