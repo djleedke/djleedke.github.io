@@ -50,34 +50,48 @@ p {
 	margin-bottom:25px;
 }
 
+/* ---------- Overlay ----------*/
+
 .overlay {
-	opacity:0;
-	color:white;
+    opacity: 0;
+	color:rgba(255, 255, 255, 0);
 	position:absolute;
 	left:0;
 	right:0;
 	top:0;
 	bottom:0;
-	transition: .5s opacity;
+    transition: 1s all;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.overlay h6 {
+    background-color:rgba(0, 0, 0, .6);
+}
+
+.overlay h6 span {
+    color:rgba(255, 255, 255, 1);
 }
 
 .project:hover > .overlay {
-	opacity: 1;
+    opacity:1;
+	color:rgba(255, 255, 255, 1);
 	z-index:1;
-	transition: .5s opacity;
+	transition: 1s all;
 }
 
 .project img {
 	width:100%;
 	text-align:center;
-	transition: .5s opacity;
+	transition: 1s all;
 }
 
 .project:hover > img {
 	opacity:.4;
-	transition: .5s opacity;
+	transition: 1s all;
 }
 
+/* ---------- Contact ---------- */
 
 #contact {
 	margin: 2% auto;
