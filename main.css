@@ -64,37 +64,6 @@ p {
 	margin-bottom:25px;
 }
 
-.project-links {
-    
-    width:100%;
-}
-
-.project-link {
-    display: inline-block;
-    font-size: 2em;
-    border-radius: 5px;
-    padding-left:10px;
-    padding-right:10px;
-    background-color:rgba(0, 0, 0, .6);
-    cursor:pointer;
-}
-
-.project-link a {
-    color:white;
-}
-
-.project-link a:hover {
-    color:  #cccccc;
-    
-}
-
-.project-tags {
-    position: absolute;
-    bottom: 10px;
-    background-color:rgba(0, 0, 0, .6);
-    border-radius: 5px;
-}
-
 /* ---------- Overlay ----------*/
 
 .overlay {
@@ -136,6 +105,36 @@ p {
 .project:hover > img {
 	opacity:.4;
 	transition: 1s all;
+}
+
+.project-links {
+    
+    width:100%;
+}
+
+.project-link {
+    display: inline-block;
+    font-size: 2em;
+    border-radius: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:rgba(0, 0, 0, .6);
+    cursor:pointer;
+}
+
+.project-link a {
+    color:white;
+}
+
+.project-link a:hover {
+    color:  #cccccc;
+    
+}
+
+.project-tags {
+
+    background-color:rgba(0, 0, 0, .6);
+    border-radius: 5px;
 }
 
 /* ---------- Contact ---------- */
