@@ -19,27 +19,41 @@ p {
 
 }
 
+/* ---------- Tags ---------- */
+
 .tag {
-	border-color:  #404040;
-	border-style: solid;
-	border-width: 1px 1px 2px 1px;
-	border-radius: 2px;
-	margin-left:2px;
+    border-style: solid;
+    border-width: 1px 1px 2px 1px;
+    border-radius: 2px;
+    margin-left:2px;
 	margin-right:2px;
-	margin-bottom:5px;
-	padding:2px 5px;
-	display:inline-block;
+    margin-bottom:5px;
+    padding:2px 5px;
+    display:inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight:bold;
+    font-size:.8em;
+}
+
+
+#project-filter .tag {
+	border-color:  #404040;
 	color: #8a8a8a;
-	font-family: 'Lato', sans-serif;
-	font-size:.8em;
-	font-weight:bold;
 	cursor:pointer;
 }
 
-.tag:hover {
+#project-filter .tag:hover {
 	color:white;
 	transition: .5s all;
 }
+
+#project-list .tag {
+    color: #e6e6e6;
+    border-color:#e6e6e6;
+    cursor: default;
+}
+
+/* --------- Projects ---------- */
 
 #project-list {
 	text-align:center;
@@ -48,6 +62,37 @@ p {
 
 .project {
 	margin-bottom:25px;
+}
+
+.project-links {
+    
+    width:100%;
+}
+
+.project-link {
+    display: inline-block;
+    font-size: 2em;
+    border-radius: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:rgba(0, 0, 0, .6);
+    cursor:pointer;
+}
+
+.project-link a {
+    color:white;
+}
+
+.project-link a:hover {
+    color:  #cccccc;
+    
+}
+
+.project-tags {
+    position: absolute;
+    bottom: 10px;
+    background-color:rgba(0, 0, 0, .6);
+    border-radius: 5px;
 }
 
 /* ---------- Overlay ----------*/
@@ -70,7 +115,8 @@ p {
 }
 
 .overlay h6 span {
-    color:rgba(255, 255, 255, 1);
+    
+    color:rgba(230, 230, 230, 1);
 }
 
 .project:hover > .overlay {
@@ -85,6 +131,7 @@ p {
 	text-align:center;
 	transition: 1s all;
 }
+
 
 .project:hover > img {
 	opacity:.4;
