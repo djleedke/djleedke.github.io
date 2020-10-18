@@ -87,7 +87,10 @@ p {
 }
 
 .overlay h6 {
-    background-color:rgba(0, 0, 0, .6);
+    background-color:rgba(26, 26, 26, 1);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
 .overlay h6 span {
