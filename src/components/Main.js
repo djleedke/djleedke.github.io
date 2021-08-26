@@ -8,8 +8,8 @@ import Row from 'react-bootstrap/Row';
 function Main(){
     return(
         <div className="min-vh-100">
-            <Container className="about-me" fluid>
-                <Row className="p-lg-5 p-3">
+            <Container className="about-me">
+                <Row className="pt-5 pb-5">
                     <div className="col-lg-7">
                         <h1 className="fw-bold">Doug Leedke</h1>
                         <div className="job-title fw-light mb-3">Software Developer</div>
@@ -32,14 +32,15 @@ function Main(){
                     </div>
                 </Row>
             </Container>
+            <hr class="break"></hr>
             <Container className="overview mt-3">
-                <Row className="ps-4">
+                <Row className="ps-3">
                     <h2 className="section-title fw-bold mt-4 mb-3">What I do</h2>
                     <p className="p-0">
                         I am always working on improving my coding chops in many different frameworks and languages.  Here are a few that I am most comfortable with:
                     </p>
                 </Row>
-                <Row className="ps-4 mt-3">
+                <Row className="ps-3 mt-3">
                     <div className="overview-item col-lg-3 col-6">
                         <div className="overview-icons">
                             <i class="fab fa-html5 pe-2"></i>
@@ -96,7 +97,7 @@ function Main(){
                 <hr class="mt-3"></hr>
             </Container>
             <Container className="featured-projects mt-3">
-                <Row className="ps-4">
+                <Row className="ps-3">
                     <h2 className="section-title fw-bold mt-4 mb-3">Featured Projects</h2>
                     <p className="p-0">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at arcu quis sem vehicula porttitor

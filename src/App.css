@@ -106,19 +106,17 @@ body.dark-mode .sidebar .navbar-nav a:hover {
 .main-wrapper {
     margin-left:280px;
     background-color: #111821;
+    padding:1rem;
 }
 
 .main-wrapper a {
+    text-decoration: none;
     color:#54B689 ;
 }
 
 .main-wrapper a:hover {
     color:white;
     background-color: #54B689;
-}
-
-body.dark-mode .about-me {
-    border-bottom: 1px solid rgb(255, 255, 255, .05);
 }
 
 /* About Me */
@@ -129,8 +127,9 @@ body.dark-mode .about-me {
 }
 
 .about-me-picture {
-    max-height:307px;
+    max-height:275px;
 }
+
 
 /* Sections */
 
@@ -139,6 +138,7 @@ body.dark-mode .about-me {
     padding-left:1.5rem;
 
 }
+
 .section-title:before {
 
     content:"";
@@ -149,6 +149,10 @@ body.dark-mode .about-me {
     position: absolute;
     left:0;
     top:0;
+}
+
+.break {
+    background-color: rgb(255, 255, 255, .2);
 }
 
 /* Overview */
@@ -205,6 +209,7 @@ body.dark-mode .overview-item-title {
 
     .main-wrapper {
         margin-left:0px;
+        padding:.5rem;
     }
 
     .sidebar {

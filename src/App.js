@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App vh-100">
         <Sidebar></Sidebar>
-        <div class="main-wrapper pe-2">
+        <div class="main-wrapper">
             <Main></Main>
         </div>
     </div>
