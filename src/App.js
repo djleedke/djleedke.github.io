@@ -11,10 +11,10 @@ function App() {
     <div className="App vh-100">
         <Container fluid>
             <Row className="h-100">
-                <Col className="col-lg-2 col-12 p-0">
+                <Col className="col-xl-2 col-lg-3 col-12 p-0">
                     <Sidebar></Sidebar>
                 </Col>
-                <Col className="col-lg-10 col-12 p-0">
+                <Col className="col-xl-10 col-lg-9 col-12 p-0">
                     <Main></Main>
                 </Col>
             </Row>
