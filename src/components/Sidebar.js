@@ -4,7 +4,7 @@ import Image from 'react-bootstrap/Image'
 
 function Sidebar(){
     return(
-        <div className="sidebar h-100">
+        <div className="sidebar">
              {/* Name & Profile Pic */}
             <h4 className="text-center pt-4 fw-bold">Doug Leedke</h4>
             <div className="w-100 pt-3 text-center">

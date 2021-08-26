@@ -40,15 +40,15 @@ h1 {
     font-size: 3em;
 }
 
-
 /* ---------- Sidebar ---------- */
 .sidebar {
     background-color: #1E2A3A;
     width:280px;
+    top:0;
+    bottom:0;
     position:fixed;
     overflow-y: auto;
 }
-
 
 .sidebar .bio {
     font-size: .875rem;
