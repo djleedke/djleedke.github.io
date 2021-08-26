@@ -128,6 +128,10 @@ body.dark-mode .about-me {
     color: rgb(255, 255, 255, .70) !important;
 }
 
+.about-me-picture {
+    max-height:307px;
+}
+
 /* Sections */
 
 .section-title {

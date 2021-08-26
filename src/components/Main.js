@@ -28,7 +28,7 @@ function Main(){
                         </Button>
                     </div>
                     <div className="col-lg-5 mt-lg-0 mt-4">
-                        <Image fluid src={ placeholder } className="img-fluid" alt="Picture of Doug" />
+                        <Image fluid src={ placeholder } className="about-me-picture img-fluid" alt="Picture of Doug" />
                     </div>
                 </Row>
             </Container>
