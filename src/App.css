@@ -1,1 +1,74 @@
 
+/* ---------- General CSS ---------- */
+
+.dark-mode {
+    color: rgb(255, 255, 255, 0.7) !important;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+    color:#fff;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+    background-color: #1E2A3A;
+}
+
+.sidebar .bio {
+    font-size: .875rem;
+}
+
+body.dark-mode .bio {
+    color:white;
+}
+
+.sidebar .navbar-nav {
+    align-items: center;
+}
+
+body.dark-mode .sidebar .nav-item{
+    color: rgb(255, 255, 255, 0.7) !important;
+}
+
+body.dark-mode .sidebar .nav-item:hover {
+    color:white !important;
+}
+
+.sidebar .navbar-nav a {
+    text-decoration: none;
+}
+
+/* <a> tags are inerhiting color from the .nav-item class */
+body.dark-mode .sidebar .navbar-nav a {
+    color: inherit !important;
+}
+
+body.dark-mode .sidebar .navbar-nav a:hover {
+    color: inherit !important;
+}
+
+.nav-item {
+    text-align: left;
+    font-weight: bold;
+    padding-bottom:8px;
+    padding-top:8px;
+}
+
+/* ---------- Main ---------- */
+
+.main {
+    background-color: #111821;
+}
+
+.main a {
+    color:#54B689 !important;
+}
+
+.main a:hover {
+    color:white !important;
+    background-color: #54B689 !important;
+}
+
+body.dark-mode .about-me {
+    border-bottom: 1px solid rgb(255, 255, 255, .05);
+}
