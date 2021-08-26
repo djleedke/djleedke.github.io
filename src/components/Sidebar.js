@@ -11,16 +11,21 @@ function Sidebar(){
                 <Image roundedCircle src={profilePic} alt="Profile picture for Doug Leedke" />
             </div>
             <div className="bio m-3 text-center">
-                Greetings!  My name is Doug and I am a software engineer.  Welcome to my site!
+                Greetings!  My name is Doug Leedke and I am a software developer.  Welcome to my site!
+            </div>
+            {/* Social Media Links*/}
+            <div className="social-links text-center fs-5 p-2">
+                <a href="https://github.com/djleedke" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/djleedke/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
             {/* Site Navigation */}
             <hr className="m-3"></hr>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a href="#"><i className="fa fa-user-o mr-3" aria-hidden="true"></i><span className="m-2">About Me</span></a>
+                        <a href="#"><i class="far fa-user"></i><span className="m-2">About Me</span></a>
                     </li>
                     <li className="nav-item">
-                        <a href="#"><i class="fa fa-code" aria-hidden="true"></i><span className="m-2">Portfolio</span></a>
+                        <a href="#"><i class="fas fa-code"></i><span className="m-2">Portfolio</span></a>
                     </li>
                     <li className="nav-item">
                         <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i><span className="m-2">Resume</span></a>

@@ -2,17 +2,53 @@
 /* ---------- General CSS ---------- */
 
 .dark-mode {
-    color: rgb(255, 255, 255, 0.7) !important;
+    color: rgb(255, 255, 255, 0.7);
 }
 
 body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
     color:#fff;
 }
 
+/* Overriding bootstrap buttons */
+
+.btn:focus {
+    outline: none !important;
+    box-shadow:none !important;
+}
+
+.btn-primary {
+    background-color: #54B689;
+    border-color: #54B689;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background: #48a97c;
+    border-color: #48a97c;
+}
+
+.btn-secondary {
+    background: #2f435c;
+    border-color: #2f435c;
+}
+
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+    background: #384f6c;
+    border-color: #384f6c;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+
 /* ---------- Sidebar ---------- */
 .sidebar {
     background-color: #1E2A3A;
+    width:280px;
+    position:fixed;
+    overflow-y: auto;
 }
+
 
 .sidebar .bio {
     font-size: .875rem;
@@ -22,16 +58,27 @@ body.dark-mode .bio {
     color:white;
 }
 
+.social-links a {
+    margin-left: .75rem;
+    width:32px;
+    height:32px;
+    color:white;
+    border-radius: 50%;
+    background-color: #54B689;
+    display: inline-block;
+    text-align:center;
+}
+
 .sidebar .navbar-nav {
     align-items: center;
 }
 
 body.dark-mode .sidebar .nav-item{
-    color: rgb(255, 255, 255, 0.7) !important;
+    color: rgb(255, 255, 255, 0.7);
 }
 
 body.dark-mode .sidebar .nav-item:hover {
-    color:white !important;
+    color:white;
 }
 
 .sidebar .navbar-nav a {
@@ -40,11 +87,11 @@ body.dark-mode .sidebar .nav-item:hover {
 
 /* <a> tags are inerhiting color from the .nav-item class */
 body.dark-mode .sidebar .navbar-nav a {
-    color: inherit !important;
+    color: inherit;
 }
 
 body.dark-mode .sidebar .navbar-nav a:hover {
-    color: inherit !important;
+    color: inherit;
 }
 
 .nav-item {
@@ -56,19 +103,110 @@ body.dark-mode .sidebar .navbar-nav a:hover {
 
 /* ---------- Main ---------- */
 
-.main {
+.main-wrapper {
+    margin-left:280px;
     background-color: #111821;
 }
 
-.main a {
-    color:#54B689 !important;
+.main-wrapper a {
+    color:#54B689 ;
 }
 
-.main a:hover {
-    color:white !important;
-    background-color: #54B689 !important;
+.main-wrapper a:hover {
+    color:white;
+    background-color: #54B689;
 }
 
 body.dark-mode .about-me {
     border-bottom: 1px solid rgb(255, 255, 255, .05);
+}
+
+/* About Me */
+
+.job-title {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255, .70) !important;
+}
+
+/* Sections */
+
+.section-title {
+    position: relative;
+    padding-left:1.5rem;
+
+}
+.section-title:before {
+
+    content:"";
+    display: inline-block;
+    background: #54B689;
+    width:5px;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+/* Overview */
+
+.overview-item {
+    padding-left:0;
+    padding-bottom:1rem;
+    padding-right:1.25rem;
+}
+
+.overview-icons {
+    font-size:1.75em;
+}
+
+
+/* Coloring for the font awesome logos */
+
+.fa-html5 {
+    color:#e34c26;
+}
+
+.fa-css3-alt {
+    color: #66d3fa;;
+}
+
+.fa-js-square {
+    color: #f0db4f;
+}
+
+.fa-react {
+    color:#61DBFB;
+}
+
+.fa-python {
+    color:#306998;
+}
+
+.overview-item-title {
+    font-weight: bold;
+}
+
+body.dark-mode .overview-item-title {
+    color:white;
+}
+
+.overview-item-content {
+    font-size: 0.875rem;
+}
+
+/* ---------- Media Queries ---------- */
+
+
+@media screen and (max-width:992px) {
+
+    .main-wrapper {
+        margin-left:0px;
+    }
+
+    .sidebar {
+        position: static;
+        height:auto;
+        width:inherit;
+    }
+
 }
