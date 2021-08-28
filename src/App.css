@@ -128,7 +128,7 @@ body.dark-mode .sidebar .navbar-nav a:hover {
 }
 
 .intro-picture {
-    max-height:275px;
+    max-height:291px;
 }
 
 
@@ -167,6 +167,20 @@ body.dark-mode .sidebar .navbar-nav a:hover {
 .overview-icons {
     font-size:1.75em;
 }
+
+/* Projects */
+
+.project-card {
+    border-radius:0px;
+    border:0px;
+    background-color: #151e29;
+}
+
+.card img {
+    max-height: 200px;
+    width:100%;
+}
+
 
 
 /* Coloring for the font awesome logos */
