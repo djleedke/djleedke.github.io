@@ -1,6 +1,8 @@
 
-import profilePic from '../assets/me.png'
-import Image from 'react-bootstrap/Image'
+import Link from 'react-router-dom/Link';
+import NavLink from 'react-router-dom/NavLink';
+import profilePic from '../assets/me.png';
+import Image from 'react-bootstrap/Image';
 
 function Sidebar(){
     return(
@@ -22,16 +24,16 @@ function Sidebar(){
             <hr className="m-3"></hr>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a href="#"><i class="far fa-user"></i><span className="m-2">About Me</span></a>
+                        <NavLink to="/" activeClassName="sidebar-link-active" exact><i class="far fa-user"></i><span className="m-2">About Me</span></NavLink>
                     </li>
                     <li className="nav-item">
-                        <a href="#"><i class="fas fa-code"></i><span className="m-2">Portfolio</span></a>
+                        <NavLink to="/portfolio" activeClassName="sidebar-link-active"><i class="fas fa-code"></i><span className="m-2">Portfolio</span></NavLink>
                     </li>
                     <li className="nav-item">
-                        <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i><span className="m-2">Resume</span></a>
+                        <NavLink to ="/resume" activeClassName="sidebar-link-active"><i class="fa fa-file-text-o" aria-hidden="true"></i><span className="m-2">Resume</span></NavLink>
                     </li>
                     <li className="nav-item">
-                        <a href="#"><i class="fa fa-envelope-open-o" aria-hidden="true"></i><span className="m-2">Contact</span></a>
+                        <NavLink to="/contact" activeClassName="sidebar-link-active"><i class="fa fa-envelope-open-o" aria-hidden="true"></i><span className="m-2">Contact</span></NavLink>
                     </li>
                 </ul>
             <hr className="m-3"></hr>

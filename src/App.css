@@ -78,7 +78,7 @@ body.dark-mode .sidebar .nav-item{
 }
 
 body.dark-mode .sidebar .nav-item:hover {
-    color:white;
+    color:rgb(212, 212, 212);
 }
 
 .sidebar .navbar-nav a {
@@ -92,6 +92,10 @@ body.dark-mode .sidebar .navbar-nav a {
 
 body.dark-mode .sidebar .navbar-nav a:hover {
     color: inherit;
+}
+
+.sidebar-link-active {
+    color:#54B689 !important;
 }
 
 .nav-item {

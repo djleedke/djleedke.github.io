@@ -5,7 +5,7 @@ import Projects from '../components/Projects'
 
 function AboutMe(){
     return(
-        <div className="min-vh-100">
+        <div class="about-me-page">
             <Intro></Intro>
             <hr class="break"></hr>
             <Overview></Overview>
