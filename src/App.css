@@ -59,7 +59,8 @@ body.dark-mode .bio {
 }
 
 .social-links a {
-    margin-left: .75rem;
+    margin-right: .25rem;
+    margin-left: .25rem;
     width:32px;
     height:32px;
     color:white;
@@ -132,7 +133,7 @@ body.dark-mode .sidebar .navbar-nav a:hover {
 }
 
 .intro-picture {
-    max-height:291px;
+    max-height:330px;
 }
 
 
@@ -235,6 +236,14 @@ body.dark-mode .overview-item-title {
         position: static;
         height:auto;
         width:inherit;
+    }
+
+    .navbar-name {
+        width:100%;
+        position: absolute;
+        left:0;
+        padding-top:1.35rem;
+
     }
 
 }

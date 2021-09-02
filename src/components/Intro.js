@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 function Intro () {
     return(
         <Container className="intro">
-            <Row className="pt-5 pb-5">
+            <Row className="pt-md-5 pt-2 pb-4">
                 <div className="col-lg-7">
                     <h1 className="fw-bold mb-1">Doug Leedke</h1>
                     <div className="job-title fw-light mb-3">Software Developer</div>
