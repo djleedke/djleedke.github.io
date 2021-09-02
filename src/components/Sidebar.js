@@ -1,16 +1,20 @@
 
+import { useState } from 'react';
 import NavLink from 'react-router-dom/NavLink';
 import profilePic from '../assets/me.png';
 import Image from 'react-bootstrap/Image';
 import Navbar from 'react-bootstrap/Navbar';
 
 function Sidebar(){
+
+    const [expanded, setExpanded] = useState(false);
+
     return(
         <div className="sidebar">
             {/* Name */}
             <h4 className="navbar-name text-center pt-lg-4 mb-0 fw-bold">Doug Leedke</h4>
-            <Navbar collapseOnSelect expand="lg" className="ps-3 pe-3" variant="dark">
-                <Navbar.Toggle className="m-2" aria-controls="navbar"/>
+            <Navbar collapseOnSelect expand="lg" className="ps-3 pe-3" variant="dark" expanded={expanded}>
+                <Navbar.Toggle onClick={() => setExpanded(expanded ? false : true)} className="m-2" aria-controls="navbar"/>
                 <Navbar.Collapse id="navigation" className="flex-column">
                     {/* Profile Pic */}
                     <div className="w-100 pt-3 text-center">
@@ -28,16 +32,16 @@ function Sidebar(){
                     <hr className="w-100"></hr>
                     <ul className="navbar-nav flex-column">
                         <li className="nav-item">
-                            <NavLink to="/" activeClassName="sidebar-link-active" exact><i className="far fa-user"></i><span className="m-2">About Me</span></NavLink>
+                            <NavLink to="/" activeClassName="sidebar-link-active" onClick={() => setExpanded(false)} exact><i className="far fa-user"></i><span className="m-2">About Me</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/portfolio" activeClassName="sidebar-link-active"><i className="fas fa-code"></i><span className="m-2">Portfolio</span></NavLink>
+                            <NavLink to="/portfolio" activeClassName="sidebar-link-active" onClick={() => setExpanded(false)}><i className="fas fa-code"></i><span className="m-2">Portfolio</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to ="/resume" activeClassName="sidebar-link-active"><i className="fa fa-file-text-o" aria-hidden="true"></i><span className="m-2">Resume</span></NavLink>
+                            <NavLink to ="/resume" activeClassName="sidebar-link-active" onClick={() => setExpanded(false)}><i className="fa fa-file-text-o" aria-hidden="true"></i><span className="m-2">Resume</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/contact" activeClassName="sidebar-link-active"><i className="fa fa-envelope-open-o" aria-hidden="true"></i><span className="m-2">Contact</span></NavLink>
+                            <NavLink to="/contact" activeClassName="sidebar-link-active" onClick={() => setExpanded(false)}><i className="fa fa-envelope-open-o" aria-hidden="true"></i><span className="m-2">Contact</span></NavLink>
                         </li>
                     </ul>
                     <hr className="w-100"></hr>
