@@ -7,6 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Sidebar(){
 
+    //Used to close the sidebar when a new page is selected on mobile
     const [expanded, setExpanded] = useState(false);
 
     return(
