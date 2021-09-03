@@ -1,16 +1,20 @@
-import Container from 'react-bootstrap/Container';
+
+//Components
 import Intro from '../components/Intro';
 import Overview from '../components/Overview'
 import Projects from '../components/Projects'
 
+//React-Bootstrap
+import Container from 'react-bootstrap/Container';
+
 function AboutMe(){
     return(
-        <div class="about-me-page">
+        <div className="about-me-page">
             <Intro></Intro>
-            <hr class="break"></hr>
+            <hr className="break"></hr>
             <Overview></Overview>
             <Container>
-                <hr class="mt-3"></hr>
+                <hr className="mt-3"></hr>
             </Container>
             <Projects></Projects>
         </div>        

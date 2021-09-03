@@ -7,7 +7,7 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
 //React-Router
-import NavLink from 'react-router-dom/NavLink';
+import { NavLink } from 'react-router-dom';
 
 function Projects () {
     return(

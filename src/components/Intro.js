@@ -8,7 +8,7 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
 //React-Router
-import NavLink from 'react-router-dom/NavLink';
+import { NavLink } from 'react-router-dom';
 import { useHistory } from "react-router-dom";
 
 function Intro () {
@@ -33,7 +33,7 @@ function Intro () {
                         If you'd like to reach out to me, send me a message <NavLink to="/contact">here</NavLink>!
                     </p>
                     <Button onClick={() => handleClick("portfolio")} className="me-3 fw-bold ps-3 pe-3">
-                        <i class="fa fa-arrow-circle-o-right me-2" aria-hidden="true"></i>
+                        <i className="fa fa-arrow-circle-o-right me-2" aria-hidden="true"></i>
                         <span className="d-none d-md-inline">View </span>Portfolio
                     </Button>
                     <Button onClick={() => handleClick("resume")} variant="secondary" className="fw-bold ps-3 pe-3">

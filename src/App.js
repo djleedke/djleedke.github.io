@@ -1,19 +1,25 @@
-
+//CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+//Components
 import Sidebar from './components/Sidebar';
+
+//Pages
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+
+//React-Router
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
     return (
         <Router>
             <div className="App vh-100">
                 <Sidebar></Sidebar>
-                <div class="main-wrapper min-vh-100">
+                <div className="main-wrapper min-vh-100">
                     <Switch>
                         <Route exact path="/">
                             <AboutMe />

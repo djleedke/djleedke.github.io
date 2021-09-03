@@ -1,9 +1,16 @@
 
-import { useState } from 'react';
-import NavLink from 'react-router-dom/NavLink';
+//Assets
 import profilePic from '../assets/me.png';
+
+//React
+import { useState } from 'react';
+
+//React-Bootstrap
 import Image from 'react-bootstrap/Image';
 import Navbar from 'react-bootstrap/Navbar';
+
+//React-Router
+import { NavLink } from 'react-router-dom';
 
 function Sidebar(){
 
@@ -26,8 +33,8 @@ function Sidebar(){
                     </div>
                     {/* Social Media Links */}
                     <div className="social-links text-center fs-5 p-2">
-                        <a href="https://github.com/djleedke" target="_blank"><i className="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/djleedke/" target="_blank"><i className="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/djleedke" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/djleedke/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
                     </div>
                     {/* Site Navigation */}
                     <hr className="w-100"></hr>

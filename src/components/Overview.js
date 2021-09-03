@@ -1,6 +1,10 @@
 
+//React-Bootstrap
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+
+//React-Router
+import { NavLink } from 'react-router-dom';
 
 function Overview () {
     return(
@@ -14,9 +18,9 @@ function Overview () {
             <Row className="ps-3 mt-3">
                 <div className="overview-item col-lg-3 col-6">
                     <div className="overview-icons">
-                        <i class="fab fa-html5 pe-2"></i>
-                        <i class="fab fa-css3-alt pe-2"></i>
-                        <i class="fab fa-js-square pe-2"></i>
+                        <i className="fab fa-html5 pe-2"></i>
+                        <i className="fab fa-css3-alt pe-2"></i>
+                        <i className="fab fa-js-square pe-2"></i>
                     </div>
                     <div className="overview-item-title">
                         HTML, CSS, & Javascript
@@ -28,19 +32,19 @@ function Overview () {
                 </div>
                 <div className="overview-item col-lg-3 col-6">
                     <div className="overview-icons">
-                        <i class="fab fa-react"></i>
+                        <i className="fab fa-react"></i>
                     </div>
                     <div className="overview-item-title">
                         React
                     </div>
                     <div className="overview-item-content">
-                        The magic behind this site!  I have several React projects up and running check them out <a href="#">here</a>.
+                        The magic behind this site!  I have several React projects up and running check them out <NavLink to="portfolio">here</NavLink>.
                         Django & React are my preferred web development stack (at the moment).
                     </div>
                 </div>
                 <div className="overview-item col-lg-3 col-6">
                     <div className="overview-icons">
-                        <i class="fab fa-python"></i>
+                        <i className="fab fa-python"></i>
                     </div>
                     <div className="overview-item-title">
                         Python & Django
@@ -52,7 +56,7 @@ function Overview () {
                 </div>
                 <div className="overview-item col-lg-3 col-6">
                     <div className="overview-icons">
-                        <i class="fas fa-chalkboard"></i>
+                        <i className="fas fa-chalkboard"></i>
                     </div>
                     <div className="overview-item-title">
                         ...and beyond!
