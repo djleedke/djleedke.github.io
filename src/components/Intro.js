@@ -17,7 +17,7 @@ function Intro () {
     //cleaner than using CSS and href in the button which reloads page
     const history = useHistory();
 
-    function handleClick(path){
+    function handleButtonClick(path){
         history.push(path);
     }
 
@@ -32,11 +32,11 @@ function Intro () {
                         Please have a look at my <NavLink to="/portfolio">portfolio</NavLink>, and feel free to check out my <NavLink to="/resume">resume</NavLink> as well!
                         If you'd like to reach out to me, send me a message <NavLink to="/contact">here</NavLink>!
                     </p>
-                    <Button onClick={() => handleClick("portfolio")} className="me-3 fw-bold ps-3 pe-3">
+                    <Button onClick={() => handleButtonClick("portfolio")} className="me-3 fw-bold ps-3 pe-3">
                         <i className="fa fa-arrow-circle-o-right me-2" aria-hidden="true"></i>
                         <span className="d-none d-md-inline">View </span>Portfolio
                     </Button>
-                    <Button onClick={() => handleClick("resume")} variant="secondary" className="fw-bold ps-3 pe-3">
+                    <Button onClick={() => handleButtonClick("resume")} variant="secondary" className="fw-bold ps-3 pe-3">
                         <i className="fa fa-file-text-o me-2" aria-hidden="true"></i>
                         <span className="d-none d-md-inline">View </span> Resume
                     </Button>

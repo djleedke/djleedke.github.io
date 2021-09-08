@@ -1,4 +1,7 @@
 
+//My Components
+import ProjectCard from './ProjectCard';
+
 //React-Bootstrap
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -16,7 +19,7 @@ function Projects () {
     //cleaner than using CSS and href in the button which reloads page
     const history = useHistory();
 
-    function handleClick(path){
+    function handleButtonClick(path){
         history.push(path);
     }
 
@@ -27,50 +30,23 @@ function Projects () {
             </Row>
             <Row className="pt-2">
                 <div className="col-md-6">
-                    <Card className="project-card mb-5">
-                        <Row className="g-0">
-                            <div className="project-img col-12 col-xl-7 position-relative">
-                                <div className="project-img-overlay">
-                                    <Button variant="secondary"><i className="fas fa-eye me-1"></i> View Case Study</Button>
-                                </div>
-                                <Image fluid src="https://user-images.githubusercontent.com/33850990/88748945-e2569700-d117-11ea-8278-4c2492034b2a.gif" alt="TweetryDish"></Image>
-                            </div>
-                            <div className="col-12 col-xl-5">
-                                <div className="card-body">
-                                    <NavLink to="/">TweetryDish</NavLink>
-                                    <p className="mt-2 project-description">
-                                        Vote to modify a daily quote to your liking.  The quote is automatically tweeted each day
-                                        with the highest voted words!
-                                    </p>
-                                </div>
-                            </div>
-                        </Row>                        
-                    </Card>
+                    <ProjectCard 
+                        projectName="TweetryDish"
+                        projectDescription="Vote to modify a daily quote to your liking.  The quote is automatically tweeted each day with the highest voted words!"
+                        imagePath="https://user-images.githubusercontent.com/33850990/88748945-e2569700-d117-11ea-8278-4c2492034b2a.gif"
+                    />
                 </div>
                 <div className="col-md-6">
-                    <Card className="project-card mb-5">
-                        <Row className="g-0">
-                            <div className="project-img col-12 col-xl-7 position-relative">
-                                <div className="project-img-overlay">
-                                    <Button variant="secondary"><i className="fas fa-eye me-1"></i> View Case Study</Button>
-                                </div>
-                                <Image fluid src="https://user-images.githubusercontent.com/33850990/88751848-1f258c80-d11e-11ea-8e2d-0ee1dc42bed7.gif" alt="ChatCode"></Image>
-                            </div>
-                            <div className="col-12 col-xl-5">
-                                <div className="card-body">
-                                <NavLink to="/">ChatCode</NavLink>
-                                    <p className="mt-2 project-description">
-                                        Chat with your friends, but be sure to decode the messages before they disappear forever!
-                                    </p>
-                                </div>
-                            </div>
-                        </Row>                        
-                    </Card>
+                    <ProjectCard 
+                        projectName="ChatCode"
+                        projectDescription="Chat with your friends, but be sure to decode the messages before they disappear forever!"
+                        imagePath="https://user-images.githubusercontent.com/33850990/88751848-1f258c80-d11e-11ea-8e2d-0ee1dc42bed7.gif"
+                    />
                 </div>
             </Row>
             <Row>
                 <div className="text-center mb-5">
-                    <Button onClick={() => handleClick("portfolio")} className="me-3 fw-bold ps-3 pe-3">
+                    <Button onClick={() => handleButtonClick("portfolio")} className="me-3 fw-bold ps-3 pe-3">
                         <i className="fa fa-arrow-circle-o-right me-2" aria-hidden="true"></i>
                         <span>View Portfolio</span>
                     </Button>

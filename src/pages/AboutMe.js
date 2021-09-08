@@ -1,5 +1,5 @@
 
-//Components
+//My Components
 import Intro from '../components/Intro';
 import Overview from '../components/Overview'
 import Projects from '../components/Projects'

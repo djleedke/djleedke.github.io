@@ -23,7 +23,7 @@ function Sidebar(){
     //cleaner than using CSS and href in the button which reloads page
     const history = useHistory();
 
-    function handleClick(path){
+    function handleButtonClick(path){
         history.push(path);
     }
 
@@ -63,7 +63,7 @@ function Sidebar(){
                         </li>
                     </ul>
                     <hr className="w-100"></hr>
-                    <Button onClick={() => {handleClick("contact"); setExpanded(false)}} className="fw-bold mt-2 mb-3 ps-3 pe-3">
+                    <Button onClick={() => {handleButtonClick("contact"); setExpanded(false)}} className="fw-bold mt-2 mb-3 ps-3 pe-3">
                         <i className="fas fa-paper-plane me-2" aria-hidden="true"></i>
                         <span>Hire Me</span>
                     </Button>
