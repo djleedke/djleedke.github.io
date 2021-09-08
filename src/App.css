@@ -256,6 +256,13 @@ body.dark-mode .overview-item-title {
     font-size: 0.875rem;
 }
 
+/* Portfolio */
+
+.portfolio-description {
+    max-width: 820px;
+    margin:0 auto;
+}
+
 /* ---------- Media Queries ---------- */
 
 
