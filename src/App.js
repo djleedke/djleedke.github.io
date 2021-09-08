@@ -12,31 +12,22 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
 //React-Router
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <Router>
+
+        <HashRouter>
             <div className="App vh-100">
                 <Sidebar></Sidebar>
                 <div className="main-wrapper min-vh-100">
-                    <Switch>
-                        <Route exact path="/">
-                            <AboutMe />
-                        </Route>
-                        <Route exact path="/portfolio">
-                            <Portfolio />
-                        </Route>
-                        <Route exact path="/resume">
-                            <Resume />
-                        </Route>
-                        <Route exact path="/contact">
-                            <Contact />
-                        </Route>
-                    </Switch>
+                    <Route exact path="/" component={AboutMe} />
+                    <Route exact path="/portfolio" component={Portfolio} />
+                    <Route exact path="/resume" component={Resume} />
+                    <Route exact path="/contact" component={Contact} />
                 </div>
             </div>
-        </Router>
+        </HashRouter>
     );
 }
 
