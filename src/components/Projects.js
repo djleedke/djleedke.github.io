@@ -8,8 +8,18 @@ import Row from 'react-bootstrap/Row';
 
 //React-Router
 import { NavLink } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
 function Projects () {
+
+    //These lines are to allow the buttons to navigate using react-router,
+    //cleaner than using CSS and href in the button which reloads page
+    const history = useHistory();
+
+    function handleClick(path){
+        history.push(path);
+    }
+
     return(
         <Container className="featured-projects mt-3">
             <Row className="ps-3">
@@ -56,6 +66,14 @@ function Projects () {
                             </div>
                         </Row>                        
                     </Card>
+                </div>
+            </Row>
+            <Row>
+                <div className="text-center mb-5">
+                    <Button onClick={() => handleClick("portfolio")} className="me-3 fw-bold ps-3 pe-3">
+                        <i className="fa fa-arrow-circle-o-right me-2" aria-hidden="true"></i>
+                        <span>View Portfolio</span>
+                    </Button>
                 </div>
             </Row>
         </Container>

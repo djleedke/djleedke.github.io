@@ -8,6 +8,7 @@ import Projects from '../components/Projects'
 import Container from 'react-bootstrap/Container';
 
 function AboutMe(){
+    
     return(
         <div className="about-me-page">
             <Intro></Intro>
