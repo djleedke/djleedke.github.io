@@ -113,7 +113,7 @@ body.dark-mode .sidebar .navbar-nav a:hover {
     padding-top:8px;
 }
 
-/* ---------- Main ---------- */
+/* ---------- Main Wrapper ---------- */
 
 .main-wrapper {
     margin-left:280px;
@@ -132,7 +132,7 @@ body.dark-mode .sidebar .navbar-nav a:hover {
     background-color: #54B689;
 }
 
-/* About Me */
+/* ---------- About Me Page ---------- */
 
 .job-title {
     font-size: 1.5em;
@@ -144,7 +144,7 @@ body.dark-mode .sidebar .navbar-nav a:hover {
 }
 
 
-/* Sections */
+/* About Me - Sections */
 
 .section-title {
     position: relative;
@@ -168,7 +168,7 @@ body.dark-mode .sidebar .navbar-nav a:hover {
     background-color: rgb(255, 255, 255, .2);
 }
 
-/* Overview */
+/* About Me - Overview */
 
 .overview-item {
     padding-left:0;
@@ -180,7 +180,14 @@ body.dark-mode .sidebar .navbar-nav a:hover {
     font-size:1.75em;
 }
 
-/* Projects */
+/* ---------- Contact Page ---------- */
+
+.contact-page a:hover {
+    color:#3d8f69;
+    background-color: transparent;
+}
+
+/* ---------- Projects Page ---------- */
 
 .project-card {
     border-radius:0px;
@@ -228,6 +235,51 @@ body.dark-mode .sidebar .navbar-nav a:hover {
     font-size: .85rem;
 }
 
+/* ---------- Portfolio Page ---------- */
+
+.portfolio-description {
+    max-width: 820px;
+    margin:0 auto;
+}
+
+/* ---------- Resume Page ---------- */
+
+.resume-container {
+    max-width: 1140px;
+}
+
+.resume-wrapper {
+    background-color: #151E29;
+}
+
+.resume-name {
+    font-size: 2.75rem;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+}
+
+.resume-tagline {
+    font-size:1.25rem;
+    font-weight: 300;
+}
+
+.resume-link {
+    font-size: .75rem;
+}
+
+.resume-link i {
+    width: 1.25rem;
+    text-align: center;
+    font-size:.85rem;
+}
+
+.resume-bio img {
+    max-width: 120px;
+}
+
+.resume-bio-description {
+    font-size:.9rem;
+}
 
 /* Coloring for the font awesome logos */
 
@@ -263,12 +315,6 @@ body.dark-mode .overview-item-title {
     font-size: 0.875rem;
 }
 
-/* Portfolio */
-
-.portfolio-description {
-    max-width: 820px;
-    margin:0 auto;
-}
 
 /* ---------- Media Queries ---------- */
 

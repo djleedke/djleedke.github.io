@@ -62,7 +62,7 @@ function Overview () {
                         ...and beyond!
                     </div>
                     <div className="overview-item-content">
-                        I am always eager to learn more!  Other frameworks & languages that I have exposure to include: 
+                        I am always eager to learn more!  Other languages & technologies that I have exposure to include: 
                         Bootstrap, C#, Flask, Java, jQuery, PHP, and SQL.
                     </div>
                 </div>

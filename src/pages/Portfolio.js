@@ -23,7 +23,7 @@ function Portfolio(){
     return(
         <div className="portfolio-page">
             <Container>
-                <Row>
+                <Row className="text-center">
                     <div className="text-center">
                         <h2 className="pt-lg-5 pt-3 fw-bold">Portfolio</h2>
                         <p className="portfolio-description">Welcome to my portfolio!  Here you will find a collection of my projects both professional and hobby.  Feel free to take a look around!</p>

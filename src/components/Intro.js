@@ -28,7 +28,7 @@ function Intro () {
                     <h1 className="fw-bold mb-1">Doug Leedke</h1>
                     <div className="job-title fw-light mb-3">Software Developer</div>
                     <p className="mb-4">
-                        I'm a software engineer focused on front and backend development for web applications. 
+                        I'm a software developer focused on front and backend development for web applications. 
                         Please have a look at my <NavLink to="/portfolio">portfolio</NavLink>, and feel free to check out my <NavLink to="/resume">resume</NavLink> as well!
                         If you'd like to reach out to me, send me a message <NavLink to="/contact">here</NavLink>!
                     </p>
