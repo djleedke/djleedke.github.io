@@ -13,7 +13,6 @@ import Resume from './pages/Resume';
 
 //React-Router
 import { HashRouter, Route } from 'react-router-dom';
-import { useHistory } from "react-router-dom";
 
 function App() {
 

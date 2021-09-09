@@ -2,7 +2,7 @@
 //React-Bootstrap
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Image, { propTypes } from 'react-bootstrap/Image';
+import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
 //React-Router
