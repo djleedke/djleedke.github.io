@@ -146,13 +146,13 @@ body.dark-mode .sidebar .navbar-nav a:hover {
 
 /* About Me - Sections */
 
-.section-title {
+.resume-section-title, .section-title {
     position: relative;
     padding-left:1.5rem;
 
 }
 
-.section-title:before {
+.resume-section-title:before, .section-title:before {
 
     content:"";
     display: inline-block;
@@ -279,6 +279,30 @@ body.dark-mode .sidebar .navbar-nav a:hover {
 
 .resume-bio-description {
     font-size:.9rem;
+}
+
+.resume-section-title {
+    letter-spacing: .15rem;
+    font-weight: bold;
+}
+
+.resume-entry-meta {
+    font-size: .80rem;
+    color: rgba(255,255,255,0.4);
+}
+
+.resume-entry-body {
+    font-size: .875rem;
+}
+
+.skills-list {
+    list-style: none;
+    padding-left:0px;
+    font-size:.875rem;
+}
+
+.skills-list li {
+    padding-top:.25rem;
 }
 
 /* Coloring for the font awesome logos */
