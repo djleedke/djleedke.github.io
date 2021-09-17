@@ -54,7 +54,7 @@ function Resume(){
                                 <div className="resume-education-section mb-4">
                                     <h5 className="resume-section-title">EDUCATION</h5>
                                     <div className="resume-entry">
-                                        <Row className="mt-3">
+                                        <Row className="mt-4">
                                             <div className="col-lg-8">
                                                 <h6 className="resume-entry-title fw-bold">Oregon State University</h6>
                                             </div>
@@ -69,10 +69,10 @@ function Resume(){
                                         </div>
                                     </div>
                                 </div>
-                                <div className="resume-project-section mb-4">
+                                <div className="resume-project-section mb-4 mt-5">
                                     <h5 className="resume-section-title">PROJECTS</h5>
                                     <div className="resume-entry">
-                                        <Row className="mt-3">
+                                        <Row className="mt-4">
                                             <div className="col-lg-8">
                                                 <h6 className="resume-entry-title fw-bold">TweetryDish</h6>
                                             </div>
@@ -90,7 +90,7 @@ function Resume(){
                                         </div>
                                     </div>
                                     <div className="resume-entry">
-                                        <Row className="mt-3">
+                                        <Row className="mt-4">
                                             <div className="col-lg-8">
                                                 <h6 className="resume-entry-title fw-bold">ChatCode</h6>
                                             </div>
@@ -108,7 +108,7 @@ function Resume(){
                                         </div>
                                     </div>
                                     <div className="resume-entry">
-                                        <Row className="mt-3">
+                                        <Row className="mt-4">
                                             <div className="col-lg-8">
                                                 <h6 className="resume-entry-title fw-bold">PingPi</h6>
                                             </div>
@@ -126,9 +126,9 @@ function Resume(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="resume-sidebar col-lg-3 mb-4">
+                            <div className="resume-sidebar col-lg-3 mb-4 mt-lg-0 mt-4">
                                 <h5 className="resume-section-title">SKILLS</h5>
-                                <div className="skills-section">
+                                <div className="skills-section mt-4">
                                     <div className="skills-section">
                                         <h6 className="skills-title mt-3 fw-bold">Languages</h6>
                                         <ul className="skills-list">
