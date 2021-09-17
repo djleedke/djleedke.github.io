@@ -14,14 +14,16 @@ function ProjectCard (props) {
         <Card className="project-card mb-5">
             <Row className="g-0">
                 <div className="project-img col-12 col-xl-7 position-relative">
-                    <div className="project-img-overlay">
-                        <Button variant="secondary"><i className="fas fa-eye me-1"></i> View Details</Button>
-                    </div>
+                    { props.overlay && 
+                        <div className="project-img-overlay">
+                            <Button variant="secondary"><i className="fas fa-eye me-1"></i> View Details</Button>
+                        </div>
+                    }
                     <Image fluid src={ props.imagePath } alt={ props.projectName }></Image>
                 </div>
                 <div className="col-12 col-xl-5">
                     <div className="card-body">
-                        <NavLink to="/">{ props.projectName }</NavLink>
+                        <a href={ props.projectUrl } target="_blank">{ props.projectName }</a>
                         <p className="mt-2 project-description">
                             { props.projectDescription }
                         </p>

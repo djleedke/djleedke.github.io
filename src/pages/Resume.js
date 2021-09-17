@@ -24,11 +24,11 @@ function Resume(){
             <Container className="px-xl-5 px-2 resume-container">
                     <div className="resume-wrapper p-5 mt-lg-5 mt-4 mb-5">
                         <Row className="resume-header">
-                            <div className="col-lg-9 col-md-8 col-12">
+                            <div className="col-lg-9 col-md-8 col-12 ps-md-3 ps-0">
                                 <h2 className="resume-name mb-0">DOUG LEEDKE</h2>
                                 <div className="resume-tagline">Software Developer</div>
                             </div>
-                            <div className="col-lg-3 col-md-4 col-12 mt-lg-1 mt-3 mb-1">
+                            <div className="col-lg-3 col-md-4 col-12 mt-lg-1 mt-3 mb-1 ps-1">
                                 <div className="resume-link"><i class="fas fa-envelope me-2"></i>djleedke@gmail.com</div>
                                 <div className="resume-link mt-2"><i class="fas fa-globe me-2"></i>djleedke.github.io</div>
                                 <div className="resume-link mt-2"><i class="fas fa-map-marker-alt me-2"></i>Minneapolis, MN</div>
@@ -40,7 +40,7 @@ function Resume(){
                                 <Image roundedCircle src={profilePic} alt="Profile picture for Doug Leedke" />
                             </div>
                             <div className="col-xl-10 col-12 mt-xl-0 ms-xl-0 mt-4">
-                                <p className="resume-bio-description">
+                                <p className="resume-bio-description mb-0">
                                     Hi everyone! My name is Doug and I am a full-stack Software Developer focused primarily on front & backend web development.
                                     I am currently working on my CS degree in Oregon State University's online post-baccalaureate
                                     program.  Below you will find my work experience as well as some of the personal projects that I 
@@ -49,8 +49,8 @@ function Resume(){
                             </div>
                         </Row>
                         <hr className="break"></hr>
-                        <Row className="resume-body">
-                            <div className="col-lg-9">
+                        <Row className="resume-body mt-4">
+                            <div className="col-lg-9 pe-lg-5">
                                 <div className="resume-education-section mb-4">
                                     <h5 className="resume-section-title">EDUCATION</h5>
                                     <div className="resume-entry">

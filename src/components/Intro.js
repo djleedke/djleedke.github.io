@@ -23,7 +23,7 @@ function Intro () {
 
     return(
         <Container className="intro">
-            <Row className="pt-md-5 pt-2 pb-4">
+            <Row className="pt-md-5 pt-2 pb-lg-4 pb-1">
                 <div className="col-lg-7">
                     <h1 className="fw-bold mb-1">Doug Leedke</h1>
                     <div className="job-title fw-light mb-3">Software Developer</div>
@@ -42,7 +42,7 @@ function Intro () {
                     </Button>
                 </div>
                 <div className="col-lg-5 mt-lg-0 mt-4">
-                    <Image fluid src={ placeholder } className="intro-picture" alt="Picture of Doug" />
+                    <Image fluid src={ placeholder } className="intro-picture pt-lg-0 pb-lg-0 pt-3 pb-4" alt="Picture of Doug" />
                 </div>
             </Row>
         </Container>
