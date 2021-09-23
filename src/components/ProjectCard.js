@@ -5,9 +5,6 @@ import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
-//React-Router
-import { NavLink } from 'react-router-dom';
-
 function ProjectCard (props) {
 
     return(
@@ -23,7 +20,7 @@ function ProjectCard (props) {
                 </div>
                 <div className="col-12 col-xl-5">
                     <div className="card-body">
-                        <a href={ props.projectUrl } target="_blank">{ props.projectName }</a>
+                        <a href={ props.projectUrl } target="_blank" rel="noreferrer">{ props.projectName }</a>
                         <p className="mt-2 project-description">
                             { props.projectDescription }
                         </p>

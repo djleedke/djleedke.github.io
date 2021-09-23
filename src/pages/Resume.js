@@ -139,10 +139,11 @@ function Resume(){
                                     <div className="skills-section">
                                         <h6 className="skills-title mt-3 fw-bold">Libraries</h6>
                                         <ul className="skills-list">
+                                            <li>React</li>
                                             <li>Bootstrap</li>
                                             <li>jQuery</li>
-                                            <li>React</li>
                                             <li>SocketIO</li>
+                                            <li>SQLAlcehmy</li>
                                         </ul>
                                     </div>
                                     <div className="skills-section">
@@ -155,9 +156,9 @@ function Resume(){
                                     <div className="skills-section">
                                         <h6 className="skills-title mt-3 fw-bold">Database</h6>
                                         <ul className="skills-list">
-                                            <li>SQLAlchemy</li>
-                                            <li>SQLite</li>
+                                            <li>SQL</li>
                                             <li>PostgreSQL</li>
+                                            <li>SQLite</li>
                                         </ul>
                                     </div>
                                     <div className="skills-section">
